@@ -1,0 +1,171 @@
+.file
+{
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+    .file.is-boxed .file-label
+    {
+        flex-direction: column;
+    }
+
+    .file.is-boxed .file-label
+    {
+        flex-direction: column;
+    }
+
+    .file.is-boxed .file-cta
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 1em 3em;
+    }
+
+    .file.is-boxed .file-name
+    {
+        border-width: 0 1px 1px;
+    }
+
+    .file.is-boxed .file-icon
+    {
+        height: 1.5em;
+        width: 1.5em;
+    }
+
+        .file.is-boxed .file-icon .fa
+        {
+            font-size: 21px;
+        }
+
+    .file.is-boxed.is-small .file-icon .fa
+    {
+        font-size: 14px;
+    }
+
+    .file.is-boxed.is-medium .file-icon .fa
+    {
+        font-size: 28px;
+    }
+
+    .file.is-boxed.is-large .file-icon .fa
+    {
+        font-size: 35px;
+    }
+
+    .file.is-boxed.has-name .file-cta
+    {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .file.is-boxed.has-name .file-name
+    {
+        border-radius: 0 0 4px 4px;
+        border-width: 0 1px 1px;
+    }
+
+
+.file-label
+{
+    align-items: stretch;
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-input
+{
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    outline: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.file-cta, .file-name
+{
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+
+.file-cta
+{
+    background-color: whitesmoke;
+    color: #4a4a4a;
+    border-radius: 4px 4px 0px 0px !important;
+}
+
+.file-icon
+{
+    align-items: center;
+    display: flex;
+    height: 1em;
+    justify-content: center;
+    margin-right: 0.5em;
+    width: 1em;
+}
+
+.file-label:hover .file-cta
+{
+    background-color: #3399cc;
+    color: #363636;
+    border-color: #3399cc;
+    border-radius: 10px, 10px,0px,0px;
+}
+
+.file-label:hover .file-name-btn
+{
+    background-color: #3399cc;
+    color: #363636;
+
+}
+
+.file-label:hover .file-name
+{
+    border-color: #d5d5d5;
+}
+
+.file-label:active .file-cta
+{
+    background-color: #e8e8e8;
+    color: #363636;
+}
+
+.file-label:active .file-name
+{
+    border-color: #cfcfcf;
+}
+
+.file.is-fullwidth .file-label
+{
+    width: 100%;
+}
+
+.file.is-medium .file-icon .fa
+{
+    font-size: 21px;
+}
+
+.file.is-large .file-icon .fa
+{
+    font-size: 28px;
+}
+
+.file-icon .fa
+{
+    font-size: 14px;
+}
+
+.icon-pf
+{
+    padding-left: 50% !important;
+}

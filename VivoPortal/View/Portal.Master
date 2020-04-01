@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Portal.master.cs" Inherits="IndraPortal.View.Portal" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<form id="formMain" runat="server" method="post">
+<head id="Head1" runat="server">
+    <title>Vivo Portal</title>
+
+    <%--------------- Css <%---------------%>
+
+    <link href="../Fonts/fontawesome-free-5.8.1-web/css/all.css?v=2019-04-27a" rel="stylesheet" type="text/css" />
+    <link href="../Css/bootstrap/bootstrap.min.css?v=2019-04-27a" rel="stylesheet" />
+    <link href="../Css/bulma.css?v=2019-04-30a" rel="stylesheet" />
+    <%--Css principal da pagina--%>
+    <link href="../Css/style.css?v=2019-04-30f" rel="stylesheet" />
+    <%-------------------------------------%>
+
+
+    <%----------------- JS ----------------%>
+    
+    <script src="../../Scripts/jquery-1.9.0.js?v=2019-05-06a"></script>
+    <script src="../../Scripts/bootstrap/popper.min.js?v=2019-04-27a"></script>
+    <script src="../../Scripts/bootstrap/bootstrap.min.js?v=2019-04-27a"></script>
+    <script src="../../Scripts/bootstrap/bootstrap.js?v=2019-04-27a"></script>
+    <script src="../../Scripts/jquery.mask.js?2019-05-07a"></script>
+    <%-------------------------------------%>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg main-menu">
+            <div class="img-menu">
+                <a class="navbar-brand" href="/View/Home.aspx">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logo_Negativo_.png" CssClass="img-menu" Width="116px" Height="60px" />
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenuPrincipal">
+                    <span class="icon-menu-principal"><i class="fas fa-bars"></i></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navMenuPrincipal" >
+                <ul class="navbar-nav">
+                    <li class="nav-item active ">
+                        <a class="nav-link txt-menu text-sm-left text-md-left" href="/View/Consulta/ConsultarRequisicao.aspx">Sumário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link txt-menu text-sm-left text-md-left" href="/View/Home.aspx">Produtos</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-md-auto">
+                    
+                        <li class="nav-item active">
+                            <asp:LinkButton ID="btnRandom" 
+                                runat="server" 
+                                CssClass="btn btn-primary"    
+                                OnClick="btnRandom_Click">
+                                <span class="icon-menu-principal"><i class="fas fa-power-off"></i></span>
+                        </asp:LinkButton>
+
+                        </li>
+                    
+                </ul>
+            </div>
+          
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        
+            <div>
+                <asp:ContentPlaceHolder ID="contentPlace" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+        
+
+    </div>
+    <footer class=" font-small main-footer">
+        <div class="footer-copyright text-right py-3">
+            ©  Indra 2013 - 2019. Todos os direitos reservados.
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+        function FecharJanela() {
+
+            window.opener = window
+            window.close("#")
+            
+        }
+    </script>
+</body>
+    </form>
+</html>

@@ -1,0 +1,358 @@
+﻿/***** CSS Padrão *****/
+h1
+{
+    font-family: Arial;
+    font-weight: bold;
+    color: #F5F5F5;
+    font-size: 20px;
+    padding: 1%;
+}
+
+Label
+{
+    font-family: Arial;
+    color: #F5F5F5;
+    font-size: 12px;
+}
+/***** CSS Upload *****/
+
+
+/**********************/
+.main-menu
+{
+    background-color: #003366;
+    height: 50px;
+}
+
+
+.txt-menu
+{
+    font-family: Arial;
+    font-weight: bold;
+    color: #F5F5F5;
+    font-size: 14px;
+}
+
+.txt
+{
+    font-family: Arial;
+    font-size: 14px;
+    color: #000000;
+}
+
+.txt-modal
+{
+    font-family: Arial;
+    font-size: 20px;
+    color: #000000;
+}
+
+.txt-modal-nr
+{
+    font-family: Arial;
+    font-size: 22px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.icon-menu-principal
+{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.icon-fa
+{
+    font-size: 2em;
+}
+
+.icon-fa2
+{
+    font-size: 3em;
+    color: #003366;
+}
+
+.icon-fa-copy
+{
+    font-size: 1em;
+    color: #003366;
+}
+
+.btn-copy
+{
+    border-radius: 4px;
+}
+
+    .btn-copy:hover
+    {
+        background: #003366;
+    }
+
+        .btn-copy:hover .icon-fa-copy
+        {
+            color: #F5F5F5;
+        }
+
+.main-footer
+{
+    bottom: 0%;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #003366;
+    color: #fff;
+}
+
+nav ul li a:hover
+{
+    color: #3399cc!important;
+}
+
+.opcoes-menu-l
+{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.opcoes-menu-r
+{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.header-page
+{
+    background: #3399cc;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.conteudo
+{
+    width: 404px;
+    height: 275px;
+    border: 4px solid #999;
+}
+
+.moldura-dois
+{
+    width: 404px;
+    border: 8px inset #5f6632;
+    padding: 15px;
+    background: #b1b1c3;
+}
+
+.moldura-um
+{
+    width: 450px; /*404+8+8(bordas)+15+15(paddings)*/
+    border: 20px inset #5d738b;
+    padding: 25px;
+}
+
+.page
+{
+    margin: 3%;
+    border: 1px solid #e0e0e0;
+    padding: 2%;
+    padding-bottom: 0px;
+}
+
+.card-menu
+{
+    max-width: 60%;
+    border-color: #003366;
+}
+
+.flex-centralizado
+{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-transparent
+{
+    background: transparent;
+    border: none;
+}
+
+.span-icon
+{
+    width: 190px;
+    flex-direction: column;
+    height: auto;
+    background-color: whitesmoke;
+    color: #4a4a4a;
+    border-radius: 5px;
+}
+
+.file-btn
+{
+    padding-top: 1% !important;
+    padding-bottom: 2% !important;
+}
+
+.file-label:hover .span-icon
+{
+    background-color: #3399cc;
+    color: #363636;
+}
+
+.txt-header-pg h3
+{
+    font-size: 30px;
+    font-family: Arial;
+    color: #003366;
+}
+
+.title-pg
+{
+    padding-top: 1%;
+}
+
+
+@media (min-width: 992px)
+{
+    .ddl-itens-pg
+    {
+        padding-left: 80% !important;
+    }
+}
+
+
+@media (min-width: 1466px)
+{
+    .ddl-itens-pg
+    {
+        padding-left: 83% !important;
+    }
+}
+
+@media (min-width: 1920px)
+{
+    .ddl-itens-pg
+    {
+        padding-left: 88% !important;
+    }
+}
+
+.ddl-itens
+{
+    border-radius: 0px 5px 5px 0px !important;
+}
+
+.btns-pd
+{
+    width: auto;
+}
+
+.moldura
+{
+    width: auto; /*404+8+8(bordas)+15+15(paddings)*/
+    /*border: 10px inset #003366;*/
+    border-style: groove;
+    padding: 10px;
+    padding-right: 0px;
+    border-radius: 10px;
+}
+
+.txt-alert
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 0.7%;
+}
+
+.pg-0
+{
+    padding: 0px;
+}
+
+
+
+.file-name-btn
+{
+    border: 1px solid;
+    background: #F5F5F5;
+    color: black;
+    border-color: #F5F5F5;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.btn-back
+{
+    padding-left: 0%;
+}
+
+.moldura-2
+{
+    padding: 0px;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+
+.grid
+{
+    display: grid;
+    width: 100%;
+    overflow: auto;
+    height: 200px;
+    padding-left: 0px;
+}
+
+.title-modal
+{
+    font-weight: bold;
+}
+/***** Icone login *****/
+
+.card-login
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    height: 400px;
+    width: 50%;
+    background-color: rgba(20, 60, 80,0.5) !important;
+    border-radius: 30px;
+}
+
+.login_btn
+{
+    color: black;
+    background-color: #007bff;
+    width: 100px;
+}
+
+    .login_btn:hover
+    {
+        color: black;
+        background-color: white;
+    }
+
+.login-body
+{
+    padding: 10%;
+}
+
+.fnt
+{
+    color: #F5F5F5;
+    font-family: Arial;
+    font-size: 46px;
+}
+
+.login-header
+{
+    text-align: center;
+}
